@@ -6,4 +6,18 @@ The project mainly focuses on designing a geoweb application for City of Calgary
 
 ![Image text](https://raw.githubusercontent.com/shellyxielt/image/main/%E6%88%AA%E5%B1%8F2021-03-02%2012.11.02.png)
 
-In the webpage, you can also enter a date range through the date range picker. After clicking the search button, you will get to a page where you can see several markers. After clicking the markers, you can see the detailed information of the spot. When you zoom out the page to a certain extent, some of the markers will be very close to each other. They will gather together to be a number. After clicking the number, you can get the markers again.
+In the webpage, you can also enter a date range through the date range picker. 
+
+![Image_text](https://raw.githubusercontent.com/shellyxielt/image/main/%E6%88%AA%E5%B1%8F2021-03-02%2012.11.58.png)
+
+After clicking the search button, you will get to a page where you can see several markers. After clicking the markers, you can see the detailed information of the spot. 
+
+![Image_text](https://github.com/shellyxielt/image/blob/main/%E6%88%AA%E5%B1%8F2021-03-02%2012.12.30.png)
+
+When you zoom out the page to a certain extent, some of the markers will be very close to each other. They will gather together to be a number. 
+
+![Image_text](https://raw.githubusercontent.com/shellyxielt/image/main/%E6%88%AA%E5%B1%8F2021-03-02%2012.12.40.png)
+
+After clicking the number, the map will zoom in automatically and you can get the markers again.
+
+![Image_text](https://raw.githubusercontent.com/shellyxielt/image/main/%E6%88%AA%E5%B1%8F2021-03-02%2012.12.52.png)
