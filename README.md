@@ -1,6 +1,6 @@
 # Project 2
 
-ENGO 551
+ENGO 651-Lab2
 
 The project mainly focuses on designing a geoweb application for City of Calgary. After running application.py, you can get a link "http://127.0.0.1:5000/". After pasting the link to your browser, you can get to a page where you can see a map of Calgary, you can either zoom in or zoom out to get a better view of the map.
 
