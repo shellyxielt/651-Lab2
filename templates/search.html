@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Building Permits</title>
+        
+        <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css') }}">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"></script>
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+        <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+    </head>
+    <body> 
+        <div id="mapid"></div>
+        <div id="search">
+            <div>
+                <h2> Search for Building Permits in Calgary</h2>
+            </div>
+            <form action="{{url_for('search')}}" method="POST">
+                <div>
+                    <label>Issued Dates:</label>
+                    <input type="text" name="daterange" value="" />
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+
+            <script src="{{url_for('static', filename='js/map.js') }}"></script>
+            
+            {% if not(geocode== "") %} 
+               <script type="text/javascript" src="{{url_for('static', filename='js/search.js') }}"></script>
+               <script type="text/javascript">identify({{geocode|tojson|safe}});</script>
+            {% endif %}
+      
+    </body>
+</html>
