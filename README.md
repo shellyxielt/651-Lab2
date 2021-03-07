@@ -26,3 +26,14 @@ After clicking the number, the map will zoom in automatically and you can get th
 
 ENGO 651-Lab3
 
+The project mainly focuses on designing a new style using Mapbox and adding a new layer to project2. Several changes were made in map.js to achieve the functions. After running application.py, you can get a link "http://127.0.0.1:5000/". Pasting the link to your browser, you will see a map of Calgary. There is a mark on the topright of the page.
+
+![Image text](https://raw.githubusercontent.com/shellyxielt/image/main/%E6%88%AA%E5%B1%8F2021-03-07%2022.08.25.png)
+
+Putting your mouse on the mark, you will get a checkbox like this. You can choose to show different layers by making different choice on the checkbox.
+
+![Image text](https://raw.githubusercontent.com/shellyxielt/image/main/%E6%88%AA%E5%B1%8F2021-03-07%2022.08.33.png)
+
+![Image text](https://raw.githubusercontent.com/shellyxielt/image/main/%E6%88%AA%E5%B1%8F2021-03-07%2022.08.51.png)
+
+![Image text](https://raw.githubusercontent.com/shellyxielt/image/main/%E6%88%AA%E5%B1%8F2021-03-07%2022.09.16.png)
